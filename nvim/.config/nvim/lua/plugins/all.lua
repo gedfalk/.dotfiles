@@ -17,7 +17,7 @@ return {
         },
         opts = {
             window = {
-                width = 30,
+                width = 35,
                 position = "left",
                 mappings = {
                     ["i"] = "noop",

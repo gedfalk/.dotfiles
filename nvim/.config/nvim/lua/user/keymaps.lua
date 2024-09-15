@@ -12,6 +12,12 @@ vim.keymap.set(nv, 'k', '<Down>', opts)
 vim.keymap.set(nv, 'j', '<Left>', opts)
 vim.keymap.set(nv, 'h', '<insert>', opts)
 
+-- Scroll several lines/chars up-down/left-right with capital letters
+vim.keymap.set(nv, 'I', '10<Up>', opts)
+vim.keymap.set(nv, 'K', '10<Down>', opts)
+vim.keymap.set(nv, 'J', '15<Left>', opts)
+vim.keymap.set(nv, 'L', '15<Right>', opts)
+
 -- Change <ESC> to 'zz'
 vim.keymap.set(ivx, 'zz', '<ESC>', opts)
 
