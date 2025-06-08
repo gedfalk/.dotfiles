@@ -9,7 +9,10 @@ vim.opt.scrolloff = 8                   -- scrolling 8 lines before edge
 vim.opt.sidescrolloff = 8               -- same, but horizontally
 
 vim.opt.termguicolors = true
-                                                                        
--- vim.opt.colorcolumn = '80'           TODO: change color
 
+-- switch layout to default english in visual mode
+-- TODO: add numbers and capital letters, except "Ж:"
+vim.opt.langmap = "ё`,йq,цw,уe,кr,еt,нy,гu,шk,щo,зp,х[,ъ],фa,ыs,вd,аf,пg,рi,оh,лj,дl,ж\\;,э',яz,чx,сc,мv,иb,тn,ьm,,ю.,./,Ж:"
+
+-- vim.opt.colorcolumn = '80'           TODO: change color
 -- vim.opt.cursorline = true            TODO: is it customizable            
