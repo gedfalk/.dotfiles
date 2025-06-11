@@ -27,9 +27,20 @@ fd() {
 }
 
 # open nvim from fzf
+# if no path is passed - it will run fzf from ~ directory
+# if '.' is passed - it will run from current directory
 fvim() {
-  local file
-  file=$(fzf) || return 
-  nvim "$file"
+    local dir
+    if [[ $# -eq 0 ]]; then
+        dir="$HOME"
+    elif [[ $1 == '.' ]]; then
+        dir="."
+    else
+        dir="$1"
+    fi
+    
+    local file
+    file=$(cd "$dir" && fzf) || return 
+    nvim "$dir/$file"
 }
 
