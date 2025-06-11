@@ -12,6 +12,9 @@ vim.keymap.set(nv, 'k', '<Down>', opts)
 vim.keymap.set(nv, 'j', '<Left>', opts)
 vim.keymap.set(nv, 'h', '<insert>', opts)
 
+-- Change insert at line start
+vim.keymap.set(nv, 'H', 'I', opts)
+
 -- Tab several times
 vim.keymap.set('v', '<Leader>l', '>gv', opts)                 
 vim.keymap.set('v', '<Leader>j', '<gv', opts)
